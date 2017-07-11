@@ -90,6 +90,8 @@ The running time of **M-Compute-Opt(n)** is $O(n)$ (if the intervals are sorted 
 
 At first, the number of non-empty M[j] is 0. Each time the procedure invoke the recurrence, issuing two recursicve calls to  **M-Compute-Opt**, the number of non-empty M[j] increases by 1. Since M has only n+1 entries, it follows that there can be at most $O(n)$ calls to  **M-Compute-Opt**, so the running time is $O(n)$ as desired.
 
+### Computing a Solution in Addition to Its Value
+
 
 
 
