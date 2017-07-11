@@ -21,12 +21,7 @@ tags: Algorithm
 
   **Objective**: Maximize the total weight of tasks to be scheduled.
 
-  > 1. ————— $u_1$ = 2
-  > 2. ​     ——————— $u_2$ = 4
-  > 3. ​                        —————— $u_3$ = 4
-  > 4. ​         ———————————————————— $u_4$ = 7
-  > 5. ​                                                                   —————————— $u_5$ = 2
-  > 6. ​                                                                         ———————————— $u_6$ = 1
+  ![DP1](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP1.png)
 
   $u_1, u_3,u_5$: 2 + 4 + 2 = 8
 
