@@ -31,7 +31,9 @@ tags: Algorithm
 
        $u_1, u_3,u_5$: 2 + 4 + 2 = 8
 
+       suppose that the tasks are sorted in nondecreasing finish time.
 
+       ​
 
 
 
