@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/gitBlog
+cd ~/Documents/gitBlog
 hexo generate
 git add --all
 git commit -m "`date +%F` `date +%T` updated"
