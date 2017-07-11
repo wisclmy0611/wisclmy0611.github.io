@@ -176,16 +176,7 @@
 <li>building up solutions to larger and larger subproblems</li>
 </ol>
 <p><strong>Objective</strong>: Maximize the total weight of tasks to be scheduled.</p>
-<blockquote>
-<ol>
-<li>————— $u_1$ = 2</li>
-<li>​     ——————— $u_2$ = 4</li>
-<li>​                        —————— $u_3$ = 4</li>
-<li>​         ———————————————————— $u_4$ = 7</li>
-<li>​                                                                   —————————— $u_5$ = 2</li>
-<li>​                                                                         ———————————— $u_6$ = 1</li>
-</ol>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP1.png" alt="DP1"></p>
 <p>$u_1, u_3,u_5$: 2 + 4 + 2 = 8</p>
 <p>suppose that the tasks are sorted in nondecreasing finish time.</p>
 <p>we define $p(j)$ to be the largest index $i &lt; j$  that $i$ is the leftmost interval ends before $j$ begins. If no such request, $p(j) = 0$.</p>
