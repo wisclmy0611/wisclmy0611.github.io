@@ -166,8 +166,8 @@
     </span>
 
         <section class="post-content">
-            <h1 id="Dynamic-Programming-动态规划"><a href="#Dynamic-Programming-动态规划" class="headerlink" title="Dynamic Programming 动态规划"></a>Dynamic Programming 动态规划</h1><p>​        Unfortunally, not all problems can come to an optimal solution by greedy algorithm. Sometimes, there are no natural greedy algorithm works. Compared to divide and conquer, when facing exponential search, we can use a powerful technique, dynamic programming.</p>
-<p>​        dynamic programming can simply described as dividing a problem into a series of subproblems, and then building up correct solutions to larger and larger subproblems (like brute-force search).</p>
+            <h1 id="Dynamic-Programming-动态规划"><a href="#Dynamic-Programming-动态规划" class="headerlink" title="Dynamic Programming 动态规划"></a>Dynamic Programming 动态规划</h1><pre><code>Unfortunally, not all problems can come to an optimal solution by greedy algorithm. Sometimes, there are no natural greedy algorithm works. Compared to divide and conquer, when facing exponential search, we can use a powerful technique, dynamic programming.
+</code></pre><p>​    Dynamic programming can simply described as dividing a problem into a series of subproblems, and then building up correct solutions to larger and larger subproblems (like brute-force search).</p>
 <p>​    不是所有问题都能用贪心算法解决，我们可以尝试动态规划。动态规划就是把一个问题分成一系列子问题，然后把解向更高一级子问题增进。（类似穷举法）</p>
 <h2 id="Recursive-Procedure"><a href="#Recursive-Procedure" class="headerlink" title="Recursive Procedure"></a>Recursive Procedure</h2><ul>
 <li><p><strong>Weighted Interval Scheduling</strong></p>
@@ -188,7 +188,25 @@
 </blockquote>
 <p>$u_1, u_3,u_5$: 2 + 4 + 2 = 8</p>
 <p>suppose that the tasks are sorted in nondecreasing finish time.</p>
+<p>we define $p(j)$ to be the largest index $i &lt; j$  that $i$ is the leftmost interval ends before $j$ begins. If no such request, $p(j) = 0$.</p>
+<p>consider an optimal solution $O$. If the last interval n is an element of $O$, then there are no interval between $p(j)$ and $j$ can belong to $O$. Also, $O$ must include an optimal solution of requests {1, …, $p(n)$}, because if didn’t, we could replace the choice of requests with a better one.</p>
+<blockquote>
+<ol>
+<li>————— $u_1$ = 2                                                                                                               p(1) = 0</li>
+<li>​     ——————— $u_2$ = 4                                                                                                  p(2) = 0</li>
+<li>​                        —————— $u_3$ = 4                                                                                   p(3) = 1</li>
+<li>​         ———————————————————— $u_4$ = 7                                            p(4) = 0</li>
+<li>​                                                                   —————————— $u_5$ = 2                        p(5) = 3</li>
+<li>​                                                                         ———————————— $u_6$ = 1          p(6) = 3</li>
+</ol>
+</blockquote>
+<p>If $n$ isn’t an element of $O$, then $O$ equals to the optimal solution to the problem {1, …. n-1}.</p>
+<p>Thus, for any value of $j$ between 1 and $n$, let $O_j$ denote the optimal solution to the problem {1, …, j}, and let OPT(j) denote the value of the solution. OPT(0) =0.</p>
+<p>OPT(j) = max ($v_j$ + OPT(p(j)), OPT(j-1)) —— either n belongs to $O$ or not</p>
 <p>​</p>
+<p><strong>Algorithm:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Compute — Opt(j)</div><div class="line">	if (j = 0)</div><div class="line">		return 0;</div><div class="line">	Else</div><div class="line">		return max(U_n + Opt(P(N)), Opt(n-1))</div><div class="line">End</div></pre></td></tr></table></figure>
+<p><strong>Proof:</strong></p>
 </li>
 </ul>
 <p>References:</p>
