@@ -6,7 +6,9 @@ tags: Algorithm
 
 # Dynamic Programming 动态规划
 
- 	Unfortunally, not all problems can come to an optimal solution by greedy algorithm. Sometimes, there are no natural greedy algorithm works. Compared to divide and conquer, when facing exponential search, we can use a powerful technique, dynamic programming.
+ 	
+
+​	Unfortunally, not all problems can come to an optimal solution by greedy algorithm. Sometimes, there are no natural greedy algorithm works. Compared to divide and conquer, when facing exponential search, we can use a powerful technique, dynamic programming.
 
 ​	Dynamic programming can simply described as dividing a problem into a series of subproblems, and then building up correct solutions to larger and larger subproblems (like brute-force search).
 
