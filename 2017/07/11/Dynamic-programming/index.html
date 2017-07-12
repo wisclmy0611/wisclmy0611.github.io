@@ -197,7 +197,37 @@
 <p>The running time of <strong>M-Compute-Opt(n)</strong> is $O(n)$ (if the intervals are sorted by finish times)</p>
 <p><strong>Proof</strong></p>
 <p>At first, the number of non-empty M[j] is 0. Each time the procedure invoke the recurrence, issuing two recursicve calls to  <strong>M-Compute-Opt</strong>, the number of non-empty M[j] increases by 1. Since M has only n+1 entries, it follows that there can be at most $O(n)$ calls to  <strong>M-Compute-Opt</strong>, so the running time is $O(n)$ as desired.</p>
-<h3 id="Computing-a-Solution-in-Addition-to-Its-Value"><a href="#Computing-a-Solution-in-Addition-to-Its-Value" class="headerlink" title="Computing a Solution in Addition to Its Value"></a>Computing a Solution in Addition to Its Value</h3><p>References:</p>
+<h3 id="Computing-a-Solution-in-Addition-to-Its-Value"><a href="#Computing-a-Solution-in-Addition-to-Its-Value" class="headerlink" title="Computing a Solution in Addition to Its Value"></a>Computing a Solution in Addition to Its Value</h3><p>We know that $j$ belongs to an optimal solution for the set of intervals {1, . . . , j} if and only if vj + OPT(p(j)) ≥ OPT(j − 1). </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Find-Solution(j) </div><div class="line">	If j=0 then</div><div class="line">        Output nothing</div><div class="line">    Else</div><div class="line">		If vj+M[p(j)]≥M[j−1] then</div><div class="line">			Output j together with the result of Find-Solution(p(j))</div><div class="line">		Else</div><div class="line">			Output the result of Find-Solution(j − 1)</div><div class="line">		Endif </div><div class="line">Endif</div></pre></td></tr></table></figure>
+<p>The complexity is $O(n)$.</p>
+<h2 id="Iterative-building-up-of-subproblems"><a href="#Iterative-building-up-of-subproblems" class="headerlink" title="Iterative building up of subproblems"></a>Iterative building up of subproblems</h2><p>Obviously, the essence of the algorithm above is the array M. We can directly compute the entries in M by an iterative algorithm instead of the memoized recursion. We start with M[0] = 0, and keep increasing $j$.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Iterative-Compute-Opt</div><div class="line">	M[0]=0</div><div class="line">	For j=1,2,...,n</div><div class="line">		M[j]= max(vj + M[p(j)], M[j − 1]) </div><div class="line">	Endfor</div></pre></td></tr></table></figure>
+<p>The complexity is $O(n)$. In each iteration, one entry in M will be filled.</p>
+<p><img src="https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP4.png" alt="DP4"></p>
+<h2 id="Principles-Memoization-or-Iteration-over-Subproblems"><a href="#Principles-Memoization-or-Iteration-over-Subproblems" class="headerlink" title="Principles: Memoization or Iteration over Subproblems"></a>Principles: Memoization or Iteration over Subproblems</h2><p><strong>Situations that DP can be applied:</strong></p>
+<ol>
+<li><p>The number of subproblems is polynomial.</p>
+</li>
+<li><p>The solution of the original problem can be computed from solutions to subproblems.</p>
+</li>
+<li><p>There is a natural ordering of problems from smallest to largest, and there is a easy-to-compute recurrence.    </p>
+<p>​</p>
+</li>
+</ol>
+<h2 id="Segmented-Least-Squares-Multi-way-Choices"><a href="#Segmented-Least-Squares-Multi-way-Choices" class="headerlink" title="Segmented Least Squares: Multi-way Choices"></a>Segmented Least Squares: Multi-way Choices</h2><p><strong>Multi-way choices:</strong> at each step, we have a polynomial number of possibilities to consider for the structure of the optimal solution, compared to only 2 in the above question.</p>
+<h3 id="Problem-1-Linear-Match-of-Date"><a href="#Problem-1-Linear-Match-of-Date" class="headerlink" title="Problem 1: Linear Match of Date"></a>Problem 1: Linear Match of Date</h3><p>Given a series of points $P_1, P_2… P_n$ with $P_i$ (i from 1 to n) = $(x_i, y_i)$ </p>
+<p>find the best match of line y = ax +b</p>
+<ul>
+<li><p>Hint: to minimize the error(L, P):</p>
+<p><img src="https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP5c.png" alt="DP5"></p>
+</li>
+</ul>
+<p>Skipping the derivation and we can come to the result : the line of minimum error is y = ax + b, where</p>
+<p><img src="https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP6.png" alt="DP6"></p>
+<p>If we use two lines, we could achieve quite a small error.</p>
+<p><img src="https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP7.png" alt="DP7"></p>
+<h3 id="Change-Detection"><a href="#Change-Detection" class="headerlink" title="Change Detection"></a>Change Detection</h3><p>Given a sequence of data points, we want to identify a few points in the sequence at which a discrete change occurs. (In this case, a change from one linear approximation to another)</p>
+<p>References:</p>
 <p>Kleinberg, J. (2005) <em>Algorithm Design,</em> Pearson Education, Inc.</p>
 
         </section>
