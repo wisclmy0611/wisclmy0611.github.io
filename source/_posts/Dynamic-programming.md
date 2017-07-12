@@ -92,6 +92,84 @@ At first, the number of non-empty M[j] is 0. Each time the procedure invoke the 
 
 ### Computing a Solution in Addition to Its Value
 
+We know that $j$ belongs to an optimal solution for the set of intervals {1, . . . , j} if and only if vj + OPT(p(j)) ≥ OPT(j − 1). 
+
+``` 
+Find-Solution(j) 
+	If j=0 then
+        Output nothing
+    Else
+		If vj+M[p(j)]≥M[j−1] then
+			Output j together with the result of Find-Solution(p(j))
+		Else
+			Output the result of Find-Solution(j − 1)
+		Endif 
+Endif
+
+```
+
+The complexity is $O(n)$.
+
+## Iterative building up of subproblems
+
+Obviously, the essence of the algorithm above is the array M. We can directly compute the entries in M by an iterative algorithm instead of the memoized recursion. We start with M[0] = 0, and keep increasing $j$.
+
+```
+Iterative-Compute-Opt
+	M[0]=0
+	For j=1,2,...,n
+		M[j]= max(vj + M[p(j)], M[j − 1]) 
+	Endfor
+```
+
+The complexity is $O(n)$. In each iteration, one entry in M will be filled.
+
+![DP4](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP4.png)
+
+## Principles: Memoization or Iteration over Subproblems
+
+**Situations that DP can be applied:**
+
+1. The number of subproblems is polynomial.
+
+2. The solution of the original problem can be computed from solutions to subproblems.
+
+3. There is a natural ordering of problems from smallest to largest, and there is a easy-to-compute recurrence.	
+
+   ​
+
+## Segmented Least Squares: Multi-way Choices
+
+**Multi-way choices:** at each step, we have a polynomial number of possibilities to consider for the structure of the optimal solution, compared to only 2 in the above question.
+
+### Problem 1: Linear Match of Date
+
+Given a series of points $P_1, P_2… P_n$ with $P_i$ (i from 1 to n) = $(x_i, y_i)$ 
+
+find the best match of line y = ax +b
+
+- Hint: to minimize the error(L, P):
+
+  ![DP5](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP5c.png)
+
+Skipping the derivation and we can come to the result : the line of minimum error is y = ax + b, where
+
+![DP6](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP6.png)
+
+If we use two lines, we could achieve quite a small error.
+
+![DP7](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Algorithm/DP7.png)
+
+### Change Detection
+
+Given a sequence of data points, we want to identify a few points in the sequence at which a discrete change occurs. (In this case, a change from one linear approximation to another)
+
+
+
+
+
+
+
 
 
 
