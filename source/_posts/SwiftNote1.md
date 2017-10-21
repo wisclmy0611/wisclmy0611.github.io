@@ -9,15 +9,15 @@ tags: Swift
 - let： `let maxNum = 1000`
 - var：`var index = 2`
 
-同时声明多个变量 `var x = 1, y = 2, z = 3`
+如果要同时声明多个变量，可以用语句 `var x = 1, y = 2, z = 3`
 
-Swift 变量的类型是严格定义的
+- Swift 变量的类型是严格定义的
 
 *type inference*: 初次赋值一个变量时，swift会自动判断变量类型而不需要自己标示
 
-按住Option，移到变量上，可以看见变量类型
+在Swift中，按住Option，移到变量上，可以看见变量类型
 
-显示声明的变量： `let website: String = "www.immoc.com"`
+显式声明一个变量： `let website: String = "www.immoc.com"`
 
 同时定义a b c为double类型的变量：`var a , b , c : Double`
 
@@ -25,7 +25,7 @@ Swift 变量的类型是严格定义的
 
 # 基本类型之整型
 
-##常用类型
+## 常用类型
 
 - int
 - float
@@ -34,13 +34,13 @@ Swift 变量的类型是严格定义的
 - string
 - tuple
 
-##整型
+## 整型
 
-`var imInt : Int = 80` 整形变量的存储由计算机内存决定 32bit or 16bit
+`var imInt : Int = 80` 整形变量的存储由计算机内存决定，可以是32bit or 16bit
 
 `Int.max` 可以看整形表达的最大值 同理`Int.min`
 
-编译层面上Swift就会报错
+在编译层面上Swift就会报错，而不是运行层面
 
 无符号整形：`UInt`  最小值是0
 
@@ -56,11 +56,9 @@ UInt.min
 
 用下划线给整形进行分割 `let bignum = 1_000_000` 使程序易读
 
+# 基本类型之浮点数和类型转换
 
-
-#基本类型之浮点数和类型转换
-
-##浮点数
+## 浮点数
 
 `let imFloat: Float = 3.1315926` 32位的表示
 
