@@ -1,5 +1,5 @@
 ---
- UInttitle: SwiftNote1
+title: SwiftNote1
 date: 2017-10-20 21:10:15
 tags: Swift
 ---
