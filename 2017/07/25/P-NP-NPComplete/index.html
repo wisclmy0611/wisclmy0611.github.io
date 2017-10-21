@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>P/NP/NPComplete | lmy.blog</title>
+  <title>P/NP/NP-Complete | lmy.blog</title>
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -43,7 +43,7 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2017/07/25/P-NP-NPComplete/">P/NP/NPComplete</a>
+                                    <a href="/2017/07/25/P-NP-NPComplete/">P/NP/NP-Complete</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
@@ -109,7 +109,7 @@
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
                 
-                    <a  data-pjax href="/2017/07/25/P-NP-NPComplete/">P/NP/NPComplete</a>
+                    <a  data-pjax href="/2017/07/25/P-NP-NPComplete/">P/NP/NP-Complete</a>
                 
                     <a  data-pjax href="/2017/07/11/Dynamic-programming/">Dynamic programming</a>
                 
@@ -129,7 +129,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">P/NP/NPComplete</a></li>
+                        <li id="navbar-title"><a href="#">P/NP/NP-Complete</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -162,7 +162,7 @@
                       
                       
                   </div>
-                <h1 class="post-title" style="margin: 14px 0;color:#50585D">P/NP/NPComplete</h1>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">P/NP/NP-Complete</h1>
 
                     <div class="post-meta">
                         Post on<span class="fa fa-clock-o"></span>
@@ -174,13 +174,40 @@
         <section class="post-content">
             <h1 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h1><p>p problem: a problem can be solved in polynomial time</p>
 <p>np problem: a candidate answer given to the problem can be tested in polynomial time</p>
-<p>np-complete: </p>
+<p>np-complete: (prove)</p>
 <ol>
-<li>prove np</li>
-<li>reduce to an np complete</li>
+<li><p>prove np</p>
+</li>
+<li><p>every problems in NP can be reduced to an np complete (If Y is an NP-complete problem, and X is a problem in NP with the<br>property that Y ≤P X, then X is NP-complete.)</p>
+<p>Which means, there is another NP-complete problem Y such that Y ≤ p X</p>
+</li>
 </ol>
+<p>   ​<br>   ​<br>   ​    </p>
 <h1 id="Lemma"><a href="#Lemma" class="headerlink" title="Lemma"></a>Lemma</h1><p>(8.1) Suppose Y ≤P X. If X can be solved in polynomial time, then Y can be<br>solved in polynomial time.</p>
 <p>(8.2) Suppose Y ≤P X. If Y cannot be solved in polynomial time, then X<br>cannot be solved in polynomial time.</p>
+<h1 id="Classic-problem"><a href="#Classic-problem" class="headerlink" title="Classic problem"></a>Classic problem</h1><h2 id="Vertex-cover"><a href="#Vertex-cover" class="headerlink" title="Vertex cover"></a>Vertex cover</h2><p>Given a graph G = (V, E), we say that a set of nodes S ⊆ V is a vertex cover if every edge e ∈ E has at least one end in S.</p>
+<ul>
+<li><strong>Reducing to Set cover</strong></li>
+</ul>
+<p>Set cover: Given a set U of n elements, a collection S1, . . . , Sm of subsets of U, and a number k, does there exist a collection of at most k of these sets whose union is equal to all of U?</p>
+<ul>
+<li><strong>(8.6) Vertex Cover ≤P Set Cover.</strong></li>
+</ul>
+<p><strong>Proof.</strong> Suppose we have access to a black box that can solve Set Cover, and<br>consider an arbitrary instance of Vertex Cover, specified by a graph G = (V , E)<br>and a number k. How can we use the black box to help us?</p>
+<p>Our goal is to cover the edges in E, so we formulate an instance of SetCover in which the ground set U is equal to E. Each time we pick a vertex inthe Vertex Cover Problem, we cover all the edges incident to it; thus, for eachvertex i ∈ V, we add a set Si ⊆ U to our Set Cover instance, consisting of allthe edges in G incident to i.</p>
+<p>WenowclaimthatU canbecoveredwithatmostkofthesetsS1,…,Snif and only if G has a vertex cover of size at most k. This can be proved veryeasily. For if Si1,…,Sil are l≤k sets that cover U, then every edge in G isincident to one of the vertices i1,…,il, and so the set {i1,…,il} is a vertexcover in G of size l ≤ k. Conversely, if {i1, . . . , il} is a vertex cover in G of sizel≤k, then the sets Si1,…,Sil cover U.</p>
+<p>Thus, given our instance of Vertex Cover, we formulate the instance ofSet Cover described above, and pass it to our black box. We answer yes if andonly if the black box answers yes.</p>
+<h2 id="The-Satisfiability-Problem"><a href="#The-Satisfiability-Problem" class="headerlink" title="The Satisfiability Problem"></a>The Satisfiability Problem</h2><h1 id="NP-Complete-Problems"><a href="#NP-Complete-Problems" class="headerlink" title="NP-Complete Problems"></a>NP-Complete Problems</h1><p>Arguably the most natural way to define a “hardest” problem X is via the<br>following two properties: (i) X ∈ NP; and (ii) for all Y ∈ NP, Y ≤P X. In other</p>
+<p>words, we require that every problem in NP can be reduced to X. We will call<br>such an X an NP-complete problem.</p>
+<p>(8.12) Suppose X is an NP-complete problem. Then X is solvable in polyno-</p>
+<p>mial time if and only if P = NP.            </p>
+<p>(8.13) Circuit Satisfiability is NP-complete.</p>
+<p>(8.14) If Y is an NP-complete problem, and X is a problem in NP with the<br>property that Y ≤P X, then X is NP-complete.</p>
+<p>(8.15) 3-Satisfiability is NP-complete.</p>
+<p>(8.16) All of the following problems are NP-complete: Independent Set, Set<br>Packing, Vertex Cover, and Set Cover.</p>
+<p>​<br>​<br>​<br>​<br>​    </p>
+<p>References:</p>
+<p>Kleinberg, J. (2005) <em>Algorithm Design,</em> Pearson Education, Inc.    </p>
 
         </section>
         <hr/>
