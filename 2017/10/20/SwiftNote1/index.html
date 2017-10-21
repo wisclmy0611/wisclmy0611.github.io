@@ -189,14 +189,15 @@
 <li>let： <code>let maxNum = 1000</code></li>
 <li>var：<code>var index = 2</code></li>
 </ul>
-<p>同时声明多个变量 <code>var x = 1, y = 2, z = 3</code></p>
-<p>Swift 变量的类型是严格定义的</p>
-<p><em>type inference</em>: 初次赋值一个变量时，swift会自动判断变量类型而不需要自己标示</p>
-<p>按住Option，移到变量上，可以看见变量类型</p>
-<p>显示声明的变量： <code>let website: String = &quot;www.immoc.com&quot;</code></p>
-<p>同时定义a b c为double类型的变量：<code>var a , b , c : Double</code></p>
-<h1 id="基本类型之整型"><a href="#基本类型之整型" class="headerlink" title="基本类型之整型"></a>基本类型之整型</h1><p>##常用类型</p>
+<p>如果要同时声明多个变量，可以用语句 <code>var x = 1, y = 2, z = 3</code></p>
 <ul>
+<li>Swift 变量的类型是严格定义的</li>
+</ul>
+<p><em>type inference</em>: 初次赋值一个变量时，swift会自动判断变量类型而不需要自己标示</p>
+<p>在Swift中，按住Option，移到变量上，可以看见变量类型</p>
+<p>显式声明一个变量： <code>let website: String = &quot;www.immoc.com&quot;</code></p>
+<p>同时定义a b c为double类型的变量：<code>var a , b , c : Double</code></p>
+<h1 id="基本类型之整型"><a href="#基本类型之整型" class="headerlink" title="基本类型之整型"></a>基本类型之整型</h1><h2 id="常用类型"><a href="#常用类型" class="headerlink" title="常用类型"></a>常用类型</h2><ul>
 <li>int</li>
 <li>float</li>
 <li>double</li>
@@ -204,18 +205,15 @@
 <li>string</li>
 <li>tuple</li>
 </ul>
-<p>##整型</p>
-<p><code>var imInt : Int = 80</code> 整形变量的存储由计算机内存决定 32bit or 16bit</p>
+<h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><p><code>var imInt : Int = 80</code> 整形变量的存储由计算机内存决定，可以是32bit or 16bit</p>
 <p><code>Int.max</code> 可以看整形表达的最大值 同理<code>Int.min</code></p>
-<p>编译层面上Swift就会报错</p>
+<p>在编译层面上Swift就会报错，而不是运行层面</p>
 <p>无符号整形：<code>UInt</code>  最小值是0</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> imUInt: <span class="type">UInt</span> = <span class="number">80</span></div><div class="line"><span class="type">UInt</span>.<span class="built_in">min</span></div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure>
 <p><code>Int8 Int16 UInt16…</code></p>
 <p>二进制赋值 <code>let binaryInt: Int = 0b10001</code></p>
 <p>用下划线给整形进行分割 <code>let bignum = 1_000_000</code> 使程序易读</p>
-<p>#基本类型之浮点数和类型转换</p>
-<p>##浮点数</p>
-<p><code>let imFloat: Float = 3.1315926</code> 32位的表示</p>
+<h1 id="基本类型之浮点数和类型转换"><a href="#基本类型之浮点数和类型转换" class="headerlink" title="基本类型之浮点数和类型转换"></a>基本类型之浮点数和类型转换</h1><h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p><code>let imFloat: Float = 3.1315926</code> 32位的表示</p>
 <p><code>let imDouble: Double = 3.1415926</code> 64位的表示</p>
 <p><code>let x = 3.1415926</code> 会自动判断是double类型</p>
 <p><code>var a = 1.25e10</code> 科学计数法表示数</p>
