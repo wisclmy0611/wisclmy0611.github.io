@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Archives: 2017/7 | lmy.blog</title>
+  <title>Sample DP Problems | lmy.blog</title>
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -154,7 +154,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">undefined</a></li>
+                        <li id="navbar-title"><a href="#">Sample DP Problems</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -173,83 +173,80 @@
 
 
 <!-- -->
-<!--<body class="home-template">-->
+<!--<body class="post-template">-->
 <!---->
   
+
 <main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/Algorithm/' style='color:#D5D5D5'>Algorithm</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Sample DP Problems</h1>
 
-    
-    <article class="post">
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2017-12-14T10:25:24.000Z"
+                              itemprop="datePublished">2017-12-14</time>
+                    </div>
+    </span>
 
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Algorithm/'>Algorithm</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/07/25/P-NP-NPComplete/">P/NP/NP-Complete</a>
-            </h1>
+        <section class="post-content">
+            <h1 id="Problem1"><a href="#Problem1" class="headerlink" title="Problem1"></a>Problem1</h1><p><strong>During spring break you are planning to make a road trip from Madison to Miami, and want to stop at various tourist locations along the way for sight-seeing. You have a map (in the form of a graph) of all the locations showing the time it takes to go from any one location to another. You have a limited amount of time for the trip, so you want to spend no more than x hours driving. Furthermore, you want to plan your trip in such a way that each location you visit is closer to Miami than the previous one.</strong></p>
+<p>Design a DP-based algorithm that returns a route from Madison to Miami with total driving time at most x hours, and that visits the maximum possible number of locations enroute. Your algorithm should run in time polynomial in the size of the graph (number of vertices and edges), independent of x.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Sort all locations into a list by the driving time they need from their location to Miami. Suppose there are n locations in total including Madison and Miami, then Madison is the $1^{th}$ element and Miami is $n^{th}$ element. Then we can construct an array M[n, n] such that M[i, j] stores the driving time from i to j (i &lt; j). Since we want to keep the distance from our car to Miami decreasing during the trip, we cannot visit 1, …., ${i-1}^{th} $ location if we visit i. Let Opt(n, x) be the maximum number of city we can visit if our destination is the $n^{th}$ city and the duration of the trip is x. Then we can have following recurrence:</p>
+<p>$Opt(n, w) = {max(Opt(i, x - t<em>{i,n}))}</em>{1 &lt;= i &lt;= n-1} +1$ </p>
+<p>Then we can design our algorithm like following:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Opt(n,w)&#123;</div><div class="line">	C[1... n, 0....x]</div><div class="line">	for i = 1 to n:</div><div class="line">		for j = 0 to x:</div><div class="line">			C[i,j] = max(C[k, j - M[k,i]]) + 1 // 1 ≤ k ≤ i</div><div class="line">		EndFor</div><div class="line">	EndFor</div><div class="line">	Return C[n, w]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Therefore, we can find the maximum locations that we can visit in $O(n^3)$ operations, which is polynomial time as desired.</p>
+<h1 id="Problem2"><a href="#Problem2" class="headerlink" title="Problem2"></a>Problem2</h1><p><strong>You are given an arithmetic expression containing n integers and n − 1 operators, each either +, −, or ×. Your goal is to perform the operations in an order that maximizes the value of the expression.</strong></p>
+<p>For example:</p>
+<p>• For the expression 6 × 3 + 2 × 5, the optimal ordering is to add the middle numbers first,then perform the multiplications: ((6 × (3 + 2)) × 5) = 150.</p>
+<p>• For the expression (−3) × 3 + 3, the optimal ordering is (((−3) × 3) + 3) = −6.</p>
+<p>• For the expression (−3) × 3 − 3, the optimal ordering is ((−3) × (3 − 3)) = 0.<br>Give a polynomial-time algorithm to find the maximum possible value of the given expression.</p>
+<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>Suppose there is an optimal solution Opt(A[n]) where A[n] is an array storing the sequnce of the numbers. Then we can observe the following recurrence </p>
+<p>$Opt(A[1: n]) = {Max(Opt(A[1:i] operation Opt(A[i: n])))}_{1&lt;=i&lt;=n} $</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Opt(n)&#123;</div><div class="line">	M[1...n, 1...n]</div><div class="line">	for i from 1 to n:</div><div class="line">		for j from j to n:</div><div class="line">			M[i,j] = Max(M[i,k] operation M[k, j])))// i ≤ k ≤j </div><div class="line">		EndFor</div><div class="line">	EndFor</div><div class="line">	Return M[1, n]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="Problem3"><a href="#Problem3" class="headerlink" title="Problem3"></a>Problem3</h1><p><strong>Consider the setting of the weighted interval scheduling problem from class, but with two identical machines rather than a single machine. In order to execute a job, one of the machines needs to be reserved for the entire duration of the job.</strong></p>
+<p>Develop a polynomial-time algorithm to construct an optimal schedule.</p>
+<h2 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h2><p>Assume all n tasks are distinct. That is to say, the finishing time of the last task on the first machine is different from the one on the second machine. Then we sort the n tasks in ascending order of their finishing time. <u>Assume v(n) is the largest index of the job that compatible with $n^{th}$ task</u> and Opt(n) is optimal solution on the set of job from 1 to n. Then, here is the reasoning: </p>
+<ol>
+<li><p>If n is not in the optimal solution:</p>
+<p>then $Opt(n) = Opt(n-1)$. We just move on to exam next task.</p>
+</li>
+<li><p>If n is in the optimal solution: </p>
+<p>Suppose $n^{th}$ task is arranged on the first machine, then the last job on the second one would be the task which finishing time is between the $v(n)^{th}$ job and the $n^{th}$ job.         </p>
+<p>==&gt; $Opt(n) = {max(Opt(i))}_{v(n) ≤ i ≤ n -1} + 1$</p>
+<p>Combine these two cases together we can get the following recurrence:</p>
+<p>==&gt; $Opt(n) = max(Opt(n-1), {max(Opt(i))}_{v(n) ≤ i ≤ n -1} + 1)$</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Opt(n)&#123;</div><div class="line">	M[1…n, 0…w]  // assume the period start from 0</div><div class="line">	for i = 1 to n:</div><div class="line">		for j = 0 to w:</div><div class="line">			 M(i,j) = max(M(i-1, j), &#123;max(M[k,j]&#125;_&#123;v(n) ≤ k ≤ n -1&#125; + 1)	</div><div class="line">		EndFor</div><div class="line">	EndFor</div><div class="line">	Return M[n,w]			</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-07-25T23:22:03.000Z"
-                      itemprop="datePublished">2017-07-25</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                Definitionp problem: a problem can be solved in polynomial time
-np problem: a candidate answer given to the problem can be tested in polynomial time
-np-complete: (prove)
-
-prove np
-
-every problems in NP can be reduced to 
-                
-            </p>
-            
         </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Algorithm/'>Algorithm</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/07/11/Dynamic-programming/">Dynamic programming</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-07-11T06:37:32.000Z"
-                      itemprop="datePublished">2017-07-11</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                Dynamic Programming 动态规划​    Unfortunally, not all problems can come to an optimal solution by greedy algorithm. Sometimes, there are no natural greedy algorithm works. Compared to divide and conquer, when facing exponen
-                
-            </p>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
             
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2017/12/14/Minimum-spanning-tree/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
         </section>
+
+
     </article>
-    
-    <nav class="pagination" role="pagination">
-        
-        <span class="page-number">Page 1 of 1</span>
-        
-    </nav>
 </main>
 
 
