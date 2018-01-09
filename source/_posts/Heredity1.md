@@ -201,9 +201,29 @@ Mendel’s second law, **the law of independent assortment**, follows transmissi
 
 分离定律与自由组合定律。
 
+# 5 Beyond Mendel's Laws
+
+- *Human Genetics*, Chapter 5 (pages 89-109)
+- Do Review Questions 1-14 on pages 106-107 of your textbook.
+- Do Applied Questions 1-10 on pages 107-108 of your textbook.
+
+Lealth alleles:  有些基因是致死的，所以后代在出生前就死了的没被计入统计数据。For example, Mendelian results are based on counting of offspring. But if some allele combinations lead to the death of offspring even before they are born, then the very basis of counting offspring is destroyed. Alleles that lead to the death of the offspring are called lethal alleles.
+
+Multiple alleles: The human ABO blood group is based on three instead of two alleles, and this is termed "multiple alleles". (Note, however, that even though there are more than two possible alleles for this trait, only two of them are possessed by any individual).
+
+the genes for some characters not being found in the nucleus but in the mitochondrion.他们是母亲的线粒体里的遗传物质遗传给了后代的
+
+linked: When the genes for two characters are found on the same chromosome, they are said to be linked. 相连的：基因在同一染色体上
+
+recombinant: 重组子. 两个位于不同载体或染色体上的突变位点之间可发生交换产生野生型的最小单位，即不能由重组分开的基本单位。
+
+ genes close on a chromosome are packaged into the same gametes and are said to be “linked”. Linkage refers to the transmission of genes on the same chromosome. Linked genes do not assort independently and do not produce Mendelian ratios for crosses tracking two or more genes. 
+
+In **epistasis**, one gene affects the phenotype of another.
+
+The 37 mitochondrial genes encode tRNA, rRNA, or proteins involved in protein synthesis or energyreactions. two rRNAs, 22 tRNAs and 13 polypeptides.
 
 
 
-​			
-​		
-​	
+# 6 Matters of Sex
+
