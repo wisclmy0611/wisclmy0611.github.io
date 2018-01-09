@@ -80,6 +80,51 @@ Biological membranes 生物膜 会生产phospholipids 磷脂 提供一个hydroph
 
 cytoskeleton 细胞骨架：所有细胞都有，不仅仅提供了细胞的建筑，也提供了细胞器在细胞中的移动路径
 
+spindle apparatus 纺锤体
+
+cytokinesis 细胞浆移动 是cytoplasm细胞质的division
+
 mitosis: 有丝分裂
 
 meiosis: 减数分裂
+
+真核细胞：先有丝分裂，细胞核分裂，然后细胞质分裂
+
+cell divison: to reproduce asexually and to grow bigger, or to replace damaged tissues
+
+Since chromosome numbers in the cells of any organism must remain the same, **the number of chromosomes in successive generations of cells is maintained by mitosis**. 有丝分裂控制了细胞generation的染色体数目。
+
+**mitosis** consisting of **prophase**, **metaphase**, **anaphase**, and **telophase** which is then followed by cytokinesis 前期，中期，后期和末期，然后细胞质分裂
+
+**prophase**: nucleolus细胞核和nuclear membrane核膜开始breakdown. 然后，DNA condenses to form chromosomes, 同时spindle 纺锤体生产一种叫microtubules的蛋白质，附着在每条染色体的kinetochore 着丝点上。
+
+**metaphase**: 染色体通过spindle microtubules移到细胞的中心
+
+**anaphase**: microtubules拉着着丝点把每一对染色体中的两个chromatids 染色单体 分别拉到细胞的两端，未附着的microtubules拉长细胞
+
+**telophase**: 染色单体（现在叫染色体了）到达了细胞的极点，未附着的microtubules持续拉长细胞; 细胞核膜重新开始包裹，细胞核核仁重现, 染色体relax（DNA unwinds）
+
+然后细胞质分裂。在动物细胞中，一个cleavage furrow 沟在中心出现，把两个细胞分开。在植物细胞中不同，因为有细胞壁。
+
+---------------------------------------这一段可以看http://highered.mheducation.com/sites/0072495855/student_view0/chapter2/animation__mitosis_and_cytokinesis.html
+
+apoptosis: 细胞凋亡
+
+telomere: 端粒是染色体末端的DNA重复串行，作用是保持染色体的完整性和控制细胞分裂周期。细胞分裂一次，由于DNA复制时的方向必须从5'方向到3'方向，DNA每次复制端粒就缩短一点。一旦端粒消耗殆尽，细胞将会立即激活凋亡机制，即细胞走向凋亡。
+
+stem cells 干细胞可以分化成各种类型的细胞
+
+Progenitor cells give rise to more specialized daughter cells but do not self-renew.
+
+
+The three sources of stem cells are embryonic stem (ES)
+cells 胚胎干细胞, induced pluripotent stem (iPS) cells 诱导性多功能干细胞, and adult stem cells 成体干细胞.
+
+
+​				
+​			
+​		
+​	
+​			
+​		
+​	
