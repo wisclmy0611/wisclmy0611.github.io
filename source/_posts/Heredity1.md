@@ -1,5 +1,5 @@
 ---
- MEIOSIS, DEVELOPMENT, AND AGINGtitle: Heredity 1
+title: Heredity 1
 date: 2018-01-09 16:32:38
 tags: Biology
 ---
@@ -142,3 +142,5 @@ oocyte: 卵母细胞
 在卵细胞发育过程中，一个卵原細胞首先经过有丝分裂进行复制产生一个初级卵母细胞 primary oocyte；随后初级卵母细胞通过减数分裂产生次级卵母细胞secondary oocyte与第一极体first polar body；接下来次级卵母细胞继续进行减数分裂产生卵细胞mature ovum和第二极体polar bodies，同时第一极体也进行一次减数分裂成为两个极体polar bodies
 
 哺乳动物的第一极体一般不会进行减数分裂，所以一共只会产生第一极体和第二极体这两个极体）。最终，三个极体（哺乳动物只有两个极体）消失，只留下卵细胞。
+
+![1](/Users/lmy/Documents/MarkdownPhotos/Biology/1.png)
