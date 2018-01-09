@@ -4,7 +4,9 @@ date: 2018-01-09 16:32:38
 tags: Biology
 ---
 
-- *Human Genetics*, Chapter 1 (pages 1-14)
+# 1 Overview of Genetics
+
+- Human Genetics*, Chapter 1 (pages 1-14)
 - Do Review Questions 1-7 on page 13 of your textbook.
 - Do Applied Questions 1-3 on pages 13 of your textbook.
 - Complete the web-based activities and forensic focus questions at the end of the chapter.
@@ -41,7 +43,7 @@ Connective tissues 结缔组织 Epithelium 上皮细胞 Muscle 肌肉细胞 Nerv
 
 gene pool: 基因池 not individual
 
-​			
+​		
 
 genome - chromosome - DNA - gene
 
@@ -49,4 +51,6 @@ DNA上大部分的片段是不转录蛋白质的，所以基因只是DNA上的�
 
 每条染色体上只有一个DNA分子。染色体由蛋白质和DNA组成。	
 ​	
+
+# 2 Cells
 
