@@ -137,10 +137,73 @@ fertilization: 受精 egg(ovum) and sperm
 
 womb: 子宫
 
-oocyte: 卵母细胞
+oocyte: 卵母细胞 primiary 是diploid，secondary是haploid
+
+oogonium: 卵原细胞（diploid）
 
 在卵细胞发育过程中，一个卵原細胞首先经过有丝分裂进行复制产生一个初级卵母细胞 primary oocyte；随后初级卵母细胞通过减数分裂产生次级卵母细胞secondary oocyte与第一极体first polar body；接下来次级卵母细胞继续进行减数分裂产生卵细胞mature ovum和第二极体polar bodies，同时第一极体也进行一次减数分裂成为两个极体polar bodies
 
 哺乳动物的第一极体一般不会进行减数分裂，所以一共只会产生第一极体和第二极体这两个极体）。最终，三个极体（哺乳动物只有两个极体）消失，只留下卵细胞。
 
 ![1](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Biology/1.png)
+
+
+
+**减数分裂**: In females, oocytes exist on the brink of meiosis I for years, and the cells complete meiosis II only if they are fertilized.  意思是，当卵原细胞通过有丝分裂产生一级卵母细胞，一级卵母细胞通过减数分裂产生二级卵母细胞和第一极体后，这个状态会保持数年，直到受孕后，才会继续减数分裂成卵细胞。
+
+![1](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Biology/2.png)
+
+
+
+
+
+A sperm cell can survive in a woman’s body for up to 3 days, but the oocyte can only be fertilized in the 12 to 24 hours after ovulation.
+
+blastomeres: 卵裂球
+
+cleavage: 卵裂
+
+Cleavage begins and a 16-celled **morula** forms. Between days 3 and 6, the morula arrives at the uterus and hollows, forming a blastocyst made up of blastomeres. Around day 6 or 7, the blastocyst implants,
+and trophoblast cells secrete hCG, which prevents
+menstruation.
+
+Monozygotic (MZ) 同卵
+
+Dizygotic (DZ) 异卵			
+
+​		
+
+# 4 Single-gene Inheritance
+
+- *Human Genetics*, Chapter 4 (pages 68-88)
+
+- Do Review Questions 1-12 on page 85 of your textbook.
+
+- Do Applied Questions 1-12 on pages 85-86 of your textbook.
+
+- Do the online activities as directed in your textbook.
+
+  ​		
+
+Mendel used statistics to investigate why some traits vanishin hybrids. **The law of segregation** states that alleles of agene go into separate gametes during meiosis. Mendel demonstrated segregation of seven traits in pea plantsusing **monohybrid crosses**.	
+
+Punnett square: 棋盘法，旁氏表 （就是四个格子表示probability的）
+
+homozygote: 纯合子
+
+heterozygote: 杂合子
+
+wild type: 野生型  基因频率最高的
+
+autosomal: 常染色体
+
+Mendel’s second law, **the law of independent assortment**, follows transmission of two or moregenes on different chromosomes. Mendel useddihybrid crosses to show that a random assortmentof maternally and paternally derived chromosomesduring meiosis yields gametes with different genecombinations.
+
+分离定律与自由组合定律。
+
+
+
+
+​			
+​		
+​	
