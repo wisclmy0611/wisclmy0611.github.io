@@ -1,5 +1,5 @@
 ---
-title: Heredity 1
+ MEIOSIS, DEVELOPMENT, AND AGINGtitle: Heredity 1
 date: 2018-01-09 16:32:38
 tags: Biology
 ---
@@ -120,11 +120,27 @@ Progenitor cells give rise to more specialized daughter cells but do not self-re
 The three sources of stem cells are embryonic stem (ES)
 cells 胚胎干细胞, induced pluripotent stem (iPS) cells 诱导性多功能干细胞, and adult stem cells 成体干细胞.
 
-
 ​				
-​			
-​		
-​	
-​			
-​		
-​	
+
+# 3  Meiosis, Development, and Aging
+
+- *Human Genetics*, Chapter 3 (pages 42-67)
+- Do Review Questions 1-16 on page 66 of your textbook.
+- Do Applied Questions 1-7 on page 66 of your textbook.
+- Do the online exercise as instructed in numbers 1 and 2 "Web Activities" on page 66 of your textbook.	
+
+zygote: 受精卵
+
+gamete: 配子
+
+fertilization: 受精 egg(ovum) and sperm
+
+womb: 子宫
+
+oocyte: 卵母细胞
+
+在卵细胞发育过程中，一个卵原細胞首先经过有丝分裂进行复制产生一个初级卵母细胞 primary oocyte；随后初级卵母细胞通过减数分裂产生次级卵母细胞secondary oocyte与第一极体first polar body；接下来次级卵母细胞继续进行减数分裂产生卵细胞mature ovum和第二极体polar bodies，同时第一极体也进行一次减数分裂成为两个极体polar bodies
+
+哺乳动物的第一极体一般不会进行减数分裂，所以一共只会产生第一极体和第二极体这两个极体）。最终，三个极体（哺乳动物只有两个极体）消失，只留下卵细胞。
+
+![1](/Users/lmy/Documents/MarkdownPhotos/Biology/1.png)
