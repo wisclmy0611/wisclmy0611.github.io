@@ -143,4 +143,4 @@ oocyte: 卵母细胞
 
 哺乳动物的第一极体一般不会进行减数分裂，所以一共只会产生第一极体和第二极体这两个极体）。最终，三个极体（哺乳动物只有两个极体）消失，只留下卵细胞。
 
-![1](https://github.com/wisclmy0611/MarkdownPhotos/blob/master/Biology/1.png?raw=true)
+![1](https://raw.githubusercontent.com/wisclmy0611/MarkdownPhotos/master/Biology/1.png)
