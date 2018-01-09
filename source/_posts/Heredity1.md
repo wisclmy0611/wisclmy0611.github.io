@@ -227,3 +227,16 @@ The 37 mitochondrial genes encode tRNA, rRNA, or proteins involved in protein sy
 
 # 6 Matters of Sex
 
+- *Human Genetics*, Chapter 6 (pages 110-129)
+- Do Review Questions 1-14 on pages 127-128 of your textbook.
+- Do Applied Questions 1-5 on page 128 of your textbook.
+
+The human male is **heterogametic**, with an X and a Ychromosome. The female, with two X chromosomes, is **homogametic**.
+
+
+
+# 7 Multi-factorial Traits
+
+- *Human Genetics*, Chapter 7 (pages 130-147)
+- Do Review Questions 1-13 on page 145 of your textbook.
+- Do Applied Questions 1-11 on pages 145-146 of your textbook.
