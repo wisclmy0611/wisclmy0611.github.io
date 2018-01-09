@@ -45,9 +45,7 @@ gene pool: 基因池 not individual
 
 ​		
 
-genome - chromosome - DNA - gene
-
-DNA上大部分的片段是不转录蛋白质的，所以基因只是DNA上的一小部分
+DNA building block - gene - chromosome - genome 从小到大
 
 每条染色体上只有一个DNA分子。染色体由蛋白质和DNA组成。	
 ​	
