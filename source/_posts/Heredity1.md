@@ -6,7 +6,7 @@ tags: Biology
 
 # 1 Overview of Genetics
 
-- Human Genetics*, Chapter 1 (pages 1-14)
+- *Human Genetics*, Chapter 1 (pages 1-14)
 - Do Review Questions 1-7 on page 13 of your textbook.
 - Do Applied Questions 1-3 on pages 13 of your textbook.
 - Complete the web-based activities and forensic focus questions at the end of the chapter.
@@ -54,3 +54,32 @@ DNA上大部分的片段是不转录蛋白质的，所以基因只是DNA上的�
 
 # 2 Cells
 
+- *Human Genetics*, Chapter 2 (pages 15-41)
+
+
+- Do Review Questions 1-13 on pages 39-40 of your textbook.
+- Do Applied Questions 1-10 on page 40 of your textbook.
+
+unicellular: 单细胞的 真菌，藻类，变形虫，眼虫
+
+Prokaryotic: 原核细胞 没有成型的细胞核，无有膜细胞器，无染色体，无细胞内膜 Bacteria 细菌 and Archaea 古菌
+
+eukaryotic cells: 真核细胞 动植物，fungi真菌，protist原生生物
+
+somatic cells: 体细胞 diploid 二倍体（两组染色体，一组来自父亲，一组来自母亲）
+
+sex cells: 生殖细胞 haploid 单倍体（只有一组染色体）
+
+carbohydrates, lipids and proteins: 碳水化合物，脂肪，蛋白质
+
+DNA is **the molecule of heredity**.
+
+真核细胞中，organelles surrounded by membranes 细胞器被膜包裹着。Mitochondria 线粒体 Plastid 质体 Endoplasmic reticulum 内质网 Golgi Complex 高尔基体 Vacuole 液泡
+
+Biological membranes 生物膜 会生产phospholipids 磷脂 提供一个hydrophobic barrier 疏水屏障来保护细胞。他们也作用于细胞之间的交流。
+
+cytoskeleton 细胞骨架：所有细胞都有，不仅仅提供了细胞的建筑，也提供了细胞器在细胞中的移动路径
+
+mitosis: 有丝分裂
+
+meiosis: 减数分裂
